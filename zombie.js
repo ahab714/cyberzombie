@@ -14,7 +14,7 @@ buildHouses()
 
 const invade = () => {
   infected = [generateRandom()]
-  rounds = 0
+  let rounds = 0
   var intervalId = setInterval(function () {
     if (infected.length === 100) {
       turnsTaken.push(rounds)

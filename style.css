@@ -5,16 +5,25 @@ body {
   margin: 0;
   padding: 0;
 }
-.bigger_container {
-  height: 100%;
-  width: 100%;
-}
-.container {
+.bigger {
   height: 80%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.smaller {
+  display: flex;
+  flex-flow: column;
+}
+
+.container {
+  height: 100%;
   width: 50%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  align-self: center;
+  margin-top: 10px;
 }
 
 .house {
@@ -23,7 +32,7 @@ body {
   width: 10%;
   height: auto;
   box-sizing: border-box;
-  border: 15px solid white;
+  border: 5px solid white;
 }
 
 .infected {
@@ -32,5 +41,16 @@ body {
   width: 10%;
   height: auto;
   box-sizing: border-box;
-  border: 15px solid white;
+  border: 5px solid white;
+}
+
+.button {
+  margin-top: 10px;
+  width: 10%;
+  align-self: center;
+}
+
+#output {
+  margin-top: 10px;
+  align-self: center;
 }
