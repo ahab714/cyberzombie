@@ -5,16 +5,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .bigger {
-  height: 80%;
+  height: 75%;
   width: 100%;
   display: flex;
-  flex-flow: column;
+  flex-direction: row;
+  justify-content: right;
 }
 
 .smaller {
+  width: 25%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -22,8 +26,6 @@ body {
   width: 50%;
   display: flex;
   flex-flow: row wrap;
-  align-self: center;
-  margin-top: 10px;
 }
 
 .house {
@@ -44,13 +46,34 @@ body {
   border: 5px solid white;
 }
 
-.button {
-  margin-top: 10px;
-  width: 10%;
-  align-self: center;
+.button_container {
+  margin-top: 20px;
 }
 
-#output {
-  margin-top: 10px;
-  align-self: center;
+button {
+  margin: auto;
+  display: block;
+  font-family: ZombieFont;
+  height: 40px;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: ZombieFont;
+}
+
+li {
+  font-family: ZombieFont;
+  font-size: 35px;
+}
+
+p {
+  font-family: ZombieFont;
+  font-size: 35px;
+}
+
+@font-face {
+  font-family: ZombieFont;
+  src: url(Creepster-Regular.ttf);
 }
