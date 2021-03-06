@@ -61,6 +61,7 @@ button {
 h1 {
   text-align: center;
   font-family: ZombieFont;
+  margin-top: 20px;
 }
 
 li {
